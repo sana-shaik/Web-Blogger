@@ -1,0 +1,36 @@
+/* Downloaded from google fonts */
+
+/* font-family: Abel */
+
+@font-face {
+    font-family: Abel;
+    src:url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+/* font-family: Anton */
+
+@font-face {
+    font-family: Anton;
+    src:url('../fonts/Anton/Anton-Regular.ttf');
+}
+
+/* font-family: Josefin */
+
+@font-face {
+    font-family: Josefin;
+    src:url('../fonts/Josefin_Sans/Josefin_Sans-Regular.ttf');
+}
+
+/* font-family: Lexend_Deca */
+
+@font-face {
+    font-family: Lexend_Deca;
+    src:url('../fonts/Lexend_Deca/Lexend_Deca-Regular.ttf');
+}
+
+/* font-family: Livvvic */
+
+@font-face {
+    font-family: Livvvic;
+    src:url('../fonts/Livvvic/Livvvic-Regular.ttf');
+}
