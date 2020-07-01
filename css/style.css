@@ -61,6 +61,10 @@ button.btn{
     cursor: pointer;
 }
 
+span {
+    font-family: var(--Abel);
+}
+
 /* ----------- Global Classes---------- */
 
 /* --------nav bar-------------------- */
@@ -185,6 +189,72 @@ main .blog {
     background-position: right;
     height: 100vh;
     width: 100%;
+    background-size: 70%;
+}
+
+main .blog .blog-post {
+    padding-top: 10rem;
+}
+
+main .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .blog-content .blog-title {
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+    padding: 0.8rem 2rem;
+    background: var(--sky);
+    margin: 0.5rem;
+
+}
+
+main .blog-content span {
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 3rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
+/* ----x-------Blog Carousel ------x--------- */
+
+/* --------------Site Content ------------------ */
+
+main .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content {
+    margin-left: 2rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -194,6 +264,10 @@ main .blog {
 
 
 
+
+
+
+/* --------x--------Site Content --------x----------- */
 
 
 
