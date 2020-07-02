@@ -412,7 +412,21 @@ main .post-content .post-title a {
 }
 /* ----x------Side bar ------x-------- */
 
+/* --------Footer -------------- */
 
+.footer {
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+    color: white;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* -------x------Footer----x------- */
 
 /* -----Viewport less than or equal to 750px -------*/
 
