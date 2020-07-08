@@ -418,7 +418,6 @@ main .post-content .post-title a {
     height: 100%;
     background: var(--bg-color);
     position: relative;
-    color: white;
 }
 
 .footer .container {
@@ -426,7 +425,86 @@ main .post-content .post-title a {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.footer .container > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+.footer .container h2 {
+    color: white;
+}
+
+.footer .newsletter .form-element {
+    color: var(--white);
+} 
+
+.footer .newsletter .form-element input {
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+.footer .newsletter .form-element span {
+    background: var(--sky);
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+.footer .instagram div > img {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: 0.3rem 0.4rem;
+}
+
+.footer .follow div {
+    color: var(--white);
+    padding: 0.4rem;
+}
+
+.footer .follow div > i {
+    margin: 0.3rem 0.4rem;
+}
+
+.footer .rights {
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+.footer .move-up span {
+    color: var(--midnight);
+}
+
+.footer .move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
 /* -------x------Footer----x------- */
+
+/* --- Viewport less than or equal to 1130 px -----*/
+
+@media only screen and (max-width: 1130px) {
+    .site-content .post-content > .post-image .post-info {
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+    .site-content .sidebar .popular-post .post-info {
+        display: none !important;
+    }
+
+}
 
 /* -----Viewport less than or equal to 750px -------*/
 
@@ -438,6 +516,40 @@ main .post-content .post-title a {
 
     .nav .toggle-collapse {
         display: initial;
+    }
+
+    main .site-content {
+        grid-template-columns: 100%;
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
+/* -----Viewport less than or equal to 520px -------*/
+
+@media only screen and (max-width: 520px) {
+    main .blog {
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info {
+        display: none;
+    }
+
+    .footer .container > div {
+        padding: 1rem 0.9rem !important;
+    }
+
+    .footer .rights {
+        padding: 0rem 1.4rem;
+        text-align: center;
+    }
+    
+    nav .toggle-collapse {
+        width: 80% !important;
     }
 
 }
